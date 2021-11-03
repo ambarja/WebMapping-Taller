@@ -7,7 +7,7 @@
    <a href="https://twitter.com/antony_barja"><img src="https://img.shields.io/badge/twitter-%231DA1F2.svg?&style=for-the-badge&logo=twitter&logoColor=white"/></a>
    <a href="https://www.youtube.com/channel/UCuWvYTTYCZBmbDoEbsY2MSw"><img src="https://img.shields.io/badge/youtube-%23FF0000.svg?&style=for-the-badge&logo=youtube&logoColor=white"/></a>
    <a href="https://github.com/ambarja/WebMapping-Taller/stargazers"><img src="https://img.shields.io/github/stars/ambarja/WebMapping-Taller?style=for-the-badge"/></a>
-   <a href="https://github.com/ambarja/WebMapping-Taller/fork?fragment=1"><img src="https://img.shields.io/github/forks//ambarja/WebMapping-Taller?style=for-the-badge"/></a>
+   <a href="https://github.com/ambarja/WebMapping-Taller/fork?fragment=1"><img src="https://img.shields.io/github/forks//ambarja/WebMapping-Taller/?style=for-the-badge"/></a>
    
  </p>
 </table>
