@@ -1,0 +1,418 @@
+# Descripción
+
+En este taller aprenderas las bases fundamentales de un GIS depeloper, se dará a conocer los conceptos básicos relacionado al webmapping,
+flujos de trabajos y tecnologías dentro del ecosistema web orientado al enfoque espacial, finalmente desarrollaremos un pequeño dashboard
+con datos abiertos relacionado al peligro de origen biológico.
+
+-------------------------------------------------------------
+
+/*Participantes :3 cards */
+
+.our-team {
+  padding: 30px 0 40px;
+  margin-bottom: 15px;
+  background-color: rgba(241, 241, 241, 0.116);
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.our-team .picture {
+  display: inline-block;
+  height: 130px;
+  width: 130px;
+  margin-bottom: 50px;
+  z-index: 1;
+  position: relative;
+}
+
+.our-team .picture::before {
+  content: "";
+  width: 100%;
+  height: 0;
+  border-radius: 50%;
+  background-color: #000000;
+  position: absolute;
+  bottom: 135%;
+  right: 0;
+  left: 0;
+  opacity: 0.9;
+  transform: scale(3);
+  transition: all 0.3s linear 0s;
+}
+
+.our-team:hover .picture::before {
+  height: 100%;
+}
+
+.our-team .picture::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #000000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.our-team .picture img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  transform: scale(1);
+  transition: all 0.9s ease 0s;
+}
+
+.our-team:hover .picture img {
+  box-shadow: 0 0 0 14px #0213b1;
+  transform: scale(0.7);
+}
+
+.our-team .title {
+  display: block;
+  font-size: 15px;
+  color: #4e5052;
+  text-transform: capitalize;
+}
+
+.our-team .social {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  background-color: #0000009f;
+  position: absolute;
+  bottom: -100px;
+  left: 0;
+  transition: all 0.5s ease 0s;
+}
+
+.our-team:hover .social {
+  bottom: 0;
+}
+
+.our-team .social li {
+  display: inline-block;
+}
+
+.our-team .social li a {
+  display: block;
+  padding: 10px;
+  font-size: 17px;
+  color: white;
+  transition: all 0.3s ease 0s;
+  text-decoration: none;
+}
+
+.our-team .social li a:hover {
+  color: #0650a5;
+  background-color: #f7f5ec;
+}
+
+h3 {
+  color: #f7f5ec;
+}
+
+-----------------------------------------------------------------------------------
+
+<!-- Cards con boostrap :3 - mi propio template -->
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+              <div class="our-team">
+                <div class="picture">
+                  <img class="img-fluid" src="https://picsum.photos/130/130?image=1027">
+                </div>
+                <div class="team-content">
+                  <h3 class="name">Michele Miller</h3>
+                </div>
+                <ul class="social">
+                  <li><a href="" class="fa fa-facebook" aria-hidden="true"></a></li>
+                  <li><a href="" class="fa fa-linkedin" aria-hidden="true"></a></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+              <div class="our-team">
+                <div class="picture">
+                  <img class="img-fluid" src="https://picsum.photos/130/130?image=839">
+                </div>
+                <div class="team-content">
+                  <h3 class="name">Patricia Knott</h3>
+                </div>
+                <ul class="social">
+                  <li><a href="https://codepen.io/collection/XdWJOQ/" class="fa fa-facebook" aria-hidden="true"></a></li>
+                  <li><a href="https://codepen.io/collection/XdWJOQ/" class="fa fa-linkedin" aria-hidden="true"></a></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+              <div class="our-team">
+                <div class="picture">
+                  <img class="img-fluid" src="https://picsum.photos/130/130?image=856">
+                </div>
+                <div class="team-content">
+                  <h3 class="name">Justin Ramos</h3>
+                </div>
+                <ul class="social">
+                  <li><a href="https://codepen.io/collection/XdWJOQ/" class="fa fa-facebook" aria-hidden="true"></a></li>
+                  <li><a href="https://codepen.io/collection/XdWJOQ/" class="fa fa-linkedin" aria-hidden="true"></a></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+              <div class="our-team">
+                <div class="picture">
+                  <img class="img-fluid" src="https://picsum.photos/130/130?image=836">
+                </div>
+                <div class="team-content">
+                  <h3 class="name">Mary Huntley</h3>
+                </div>
+                <ul class="social">
+                  <li><a href="https://codepen.io/collection/XdWJOQ/" class="fa fa-facebook" aria-hidden="true"></a></li>
+                  <li><a href="https://codepen.io/collection/XdWJOQ/" class="fa fa-linkedin" aria-hidden="true"></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        <!-- New cards -->
+
+
+
+
+-------------------------------------------------------------
+
+/* Footer */
+.site-footer
+{
+  background-color:#0a0a0aab;
+  padding: 0px 0px 0px 0px;
+  color:#737373;
+  margin-top: 10px;
+}
+.site-footer hr
+{
+  border-top-color:#bbb;
+  opacity:0.9
+}
+.site-footer hr.small
+{
+  margin: 0
+}
+.site-footer h6
+{
+  color:#fff;
+  font-size:10px;
+  text-transform:uppercase;
+  margin-top:5px;
+  letter-spacing:2px
+}
+.site-footer a
+{
+  color:#737373;
+}
+.site-footer a:hover
+{
+  color:#3366cc;
+  text-decoration:none;
+}
+.footer-links
+{
+  padding-left:0;
+  list-style:none
+}
+.footer-links li
+{
+  display:block
+}
+.footer-links a
+{
+  color:#737373
+}
+.footer-links a:active,.footer-links a:focus,.footer-links a:hover
+{
+  color:#3366cc;
+  text-decoration:none;
+}
+.footer-links.inline li
+{
+  display:inline-block
+}
+.site-footer .social-icons
+{
+  text-align:right
+}
+.site-footer .social-icons a
+{
+  width:30px;
+  height:30px;
+  line-height:30px;
+  margin-left:6px;
+  margin-right:0;
+  border-radius:100%;
+  background-color:#33353d
+}
+.copyright-text
+{
+  margin:0
+}
+@media (max-width:991px)
+{
+  .site-footer [class^=col-]
+  {
+    margin-bottom:30px
+  }
+}
+@media (max-width:767px)
+{
+  .site-footer
+  {
+    padding-bottom:0
+  }
+  .site-footer .copyright-text,.site-footer .social-icons
+  {
+    text-align:center
+  }
+}
+.social-icons
+{
+  padding-left:0;
+  margin-bottom:0;
+  list-style:none
+}
+.social-icons li
+{
+  display:inline-block;
+  margin-bottom:4px
+}
+.social-icons li.title
+{
+  margin-right:15px;
+  text-transform:uppercase;
+  color:#96a2b2;
+  font-weight:700;
+  font-size:13px
+}
+.social-icons a{
+  background-color:#eceeef;
+  color:#818a91;
+  font-size:16px;
+  display:inline-block;
+  line-height:44px;
+  width:44px;
+  height:44px;
+  text-align:center;
+  margin-right:8px;
+  border-radius:100%;
+  -webkit-transition:all .2s linear;
+  -o-transition:all .2s linear;
+  transition:all .2s linear
+}
+.social-icons a:active,.social-icons a:focus,.social-icons a:hover
+{
+  color:#fff;
+  background-color:#29aafe
+}
+.social-icons.size-sm a
+{
+  line-height:34px;
+  height:34px;
+  width:34px;
+  font-size:14px
+}
+.social-icons a.facebook:hover
+{
+  background-color:#3b5998
+}
+.social-icons a.twitter:hover
+{
+  background-color:#00aced
+}
+.social-icons a.linkedin:hover
+{
+  background-color:#007bb6
+}
+.social-icons a.dribbble:hover
+{
+  background-color:#ea4c89
+}
+@media (max-width:767px)
+{
+  .social-icons li.title
+  {
+    display:block;
+    margin-right:0;
+    font-weight:200
+  }
+}
+
+-------------------------------------------------------------        
+<!-- Site footer -->
+      <footer class="site-footer" style="margin-top: 62px;">
+          <div class="container my-10">   
+            <div class="row">
+              <div class="col">
+                <p style="padding-left: 20px;margin-left: -550px;margin-top: 4px;">Creado por @antony_barja</p> 
+              </div>
+              <div class="col">
+                <ul class="social-icons">
+                  <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+                  <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+                  <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
+                  <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>   
+              </ul>
+              </div>
+            </div>   
+          </div>
+      </footer>
+<!--footer -->
+
+--------------------------------------------------------------
+Copyrigth - basemap
+
+var basemap = {
+ OpenStreetMap: L.tileLayer(
+  'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+   {attribution: "&copy;<a href='https://openstreetmap.org/copyright'>OpenStreetMap</a> contibutors"}
+   ),
+ Satelital: L.tileLayer(
+  'https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}',
+  {attribution: 'Tiles &copy; Esri &mdash; Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community'}
+  )
+};
+	
+-------------------------------------------------------------
+
+## Bluma
+
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+          <a class="navbar-item" href="https://bulma.io"><img src="https://bulma.io/images/bulma-logo.png" width="112" height="28"></a>
+          <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
+        </div>
+      
+        <div id="navbarBasicExample" class="navbar-menu">
+             <div class="navbar-start">
+                 <a class="navbar-item">Home</a>
+                 <a class="navbar-item"></a>
+            </div>
+        </div>
+      
+        <div class="navbar-end">
+            <div class="navbar-item">
+              <div class="buttons">
+                <a class="button is-primary"><strong>Sign up</strong></a>
+                <a class="button is-light">Log in</a>
+              </div>
+            </div>
+          </div>
+        </div>
+    </nav>
