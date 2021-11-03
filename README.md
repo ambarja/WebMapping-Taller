@@ -13,7 +13,7 @@
 </table>
 
 
-![img](./img/post.png)
+![img](./portada/post.png)
 
 ## **Lista de contenido**
  - Introducción al webmapping 
